@@ -1,4 +1,5 @@
-import { Renderable, RenderFunction } from '@storybook/react';
+import * as React from 'react';
+
 export type Store<T> = {
   /**
    * @description
@@ -19,6 +20,9 @@ export type Store<T> = {
    */
   reset(): void;
 };
+
+export type Renderable = React.ComponentType | JSX.Element;
+export type RenderFunction = () => Renderable | Renderable[];
 
 export type LegacyStorybookStateCallback<T> = (store: Store<T>) => Renderable | Renderable[];
 export function withState<T extends {}>(state: T, callback: LegacyStorybookStateCallback<T>): any // RenderFunction;
