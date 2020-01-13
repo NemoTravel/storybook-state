@@ -1,6 +1,6 @@
 {
   "name": "@nemo.travel/storybook-state",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Manage component state in storybook stories.",
   "main": "dist/index.js",
   "typings": "index.d.ts",
